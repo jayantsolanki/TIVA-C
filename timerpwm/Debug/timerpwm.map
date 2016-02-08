@@ -1,0 +1,237 @@
+******************************************************************************
+                  TI ARM Linker Unix v5.2.5                    
+******************************************************************************
+>> Linked Mon Feb  8 17:48:23 2016
+
+OUTPUT FILE NAME:   <timerpwm.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 000008f1
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  FLASH                 00000000   00040000  00000b68  0003f498  R  X
+  SRAM                  20000000   00008000  00000218  00007de8  RW X
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00000b68   00000b68    r-x
+  00000000    00000000    0000026c   0000026c    r-- .intvecs
+  0000026c    0000026c    00000870   00000870    r-x .text
+  00000adc    00000adc    0000006c   0000006c    r-- .const
+  00000b48    00000b48    00000020   00000020    r-- .cinit
+20000000    20000000    00000218   00000000    rw-
+  20000000    20000000    00000200   00000000    rw- .stack
+  20000200    20000200    00000018   00000000    rw- .data
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    0000026c     
+                  00000000    0000026c     tm4c123gh6pm_startup_ccs.obj (.intvecs)
+
+.text      0    0000026c    00000870     
+                  0000026c    00000290     main.obj (.text)
+                  000004fc    00000110     driverlib.lib : sysctl.obj (.text:SysCtlClockGet)
+                  0000060c    000000f4                   : sysctl.obj (.text:SysCtlClockSet)
+                  00000700    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  0000079c    0000007a                                   : memset_t2.obj (.text)
+                  00000816    00000002     --HOLE-- [fill = 0]
+                  00000818    0000006c                                   : autoinit.obj (.text)
+                  00000884    0000006a                                   : copy_decompress_rle.obj (.text)
+                  000008ee    00000002     --HOLE-- [fill = 0]
+                  000008f0    00000050                                   : boot.obj (.text)
+                  00000940    0000004c                                   : cpy_tbl.obj (.text)
+                  0000098c    00000044                                   : exit.obj (.text)
+                  000009d0    00000034     driverlib.lib : sysctl.obj (.text:SysCtlPeripheralEnable)
+                  00000a04    00000022                   : pwm.obj (.text:PWMGenConfigure)
+                  00000a26    0000001e                   : pwm.obj (.text:PWMPulseWidthSet)
+                  00000a44    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  00000a5c    00000014     driverlib.lib : sysctl.obj (.text:SysCtlPWMClockSet)
+                  00000a70    00000014     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
+                  00000a84    00000012     driverlib.lib : pwm.obj (.text:PWMOutputState)
+                  00000a96    00000010                   : pwm.obj (.text:PWMGenPeriodSet)
+                  00000aa6    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  00000ab4    0000000c     driverlib.lib : pwm.obj (.text:PWMGenEnable)
+                  00000ac0    0000000c     tm4c123gh6pm_startup_ccs.obj (.text)
+                  00000acc    00000006     driverlib.lib : sysctl.obj (.text:SysCtlDelay)
+                  00000ad2    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+                  00000ad8    00000004                                   : pre_init.obj (.text)
+
+.const     0    00000adc    0000006c     
+                  00000adc    0000006c     driverlib.lib : sysctl.obj (.const:g_pui32Xtals)
+
+.cinit     0    00000b48    00000020     
+                  00000b48    0000000f     (.cinit..data.load) [load image, compression = rle]
+                  00000b57    00000001     --HOLE-- [fill = 0]
+                  00000b58    00000008     (__TI_handler_table)
+                  00000b60    00000008     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.data      0    20000200    00000018     UNINITIALIZED
+                  20000200    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.data)
+                  20000208    00000008                                   : exit.obj (.data)
+                  20000210    00000004     main.obj (.data)
+                  20000214    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : stkdepth_vars.obj (.data)
+
+.stack     0    20000000    00000200     UNINITIALIZED
+                  20000000    00000200     --HOLE--
+
+.TI.persistent 
+*          0    20000200    00000000     UNINITIALIZED
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 00000b60 records: 1, size/record: 8, table size: 8
+	.data: load addr=00000b48, load size=0000000f bytes, run addr=20000200, run size=00000018 bytes, compression=rle
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00000b58 records: 2, size/record: 4, table size: 8
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                    
+-------   ----                    
+0000098d  C$$EXIT                 
+00000a05  PWMGenConfigure         
+00000ab5  PWMGenEnable            
+00000a97  PWMGenPeriodSet         
+00000a85  PWMOutputState          
+00000a27  PWMPulseWidthSet        
+00000ac1  ResetISR                
+UNDEFED   SHT$$INIT_ARRAY$$Base   
+UNDEFED   SHT$$INIT_ARRAY$$Limit  
+000004fd  SysCtlClockGet          
+0000060d  SysCtlClockSet          
+00000acd  SysCtlDelay             
+00000a5d  SysCtlPWMClockSet       
+000009d1  SysCtlPeripheralEnable  
+20000200  __STACK_END             
+00000200  __STACK_SIZE            
+20000200  __STACK_TOP             
+00000b60  __TI_CINIT_Base         
+00000b68  __TI_CINIT_Limit        
+00000b58  __TI_Handler_Table_Base 
+00000b60  __TI_Handler_Table_Limit
+00000819  __TI_auto_init          
+20000208  __TI_cleanup_ptr        
+00000aa7  __TI_decompress_none    
+00000ad3  __TI_decompress_rle24   
+2000020c  __TI_dtors_ptr          
+00000000  __TI_static_base__      
+0000079d  __aeabi_memclr          
+0000079d  __aeabi_memclr4         
+0000079d  __aeabi_memclr8         
+00000701  __aeabi_memcpy          
+00000701  __aeabi_memcpy4         
+00000701  __aeabi_memcpy8         
+0000079f  __aeabi_memset          
+0000079f  __aeabi_memset4         
+0000079f  __aeabi_memset8         
+ffffffff  __binit__               
+ffffffff  __c_args__              
+20000000  __stack                 
+00000a45  _args_main              
+000008f1  _c_int00                
+20000200  _lock                   
+00000a7f  _nop                    
+00000a77  _register_lock          
+00000a71  _register_unlock        
+00000ad9  _system_pre_init        
+20000204  _unlock                 
+00000991  abort                   
+ffffffff  binit                   
+00000941  copy_in                 
+20000213  count                   
+00000999  exit                    
+20000211  flag1                   
+20000212  flag2                   
+00000000  g_pfnVectors            
+0000026d  main                    
+20000214  main_func_sp            
+00000701  memcpy                  
+000007a5  memset                  
+20000210  mode                    
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                    
+-------   ----                    
+00000000  __TI_static_base__      
+00000000  g_pfnVectors            
+00000200  __STACK_SIZE            
+0000026d  main                    
+000004fd  SysCtlClockGet          
+0000060d  SysCtlClockSet          
+00000701  __aeabi_memcpy          
+00000701  __aeabi_memcpy4         
+00000701  __aeabi_memcpy8         
+00000701  memcpy                  
+0000079d  __aeabi_memclr          
+0000079d  __aeabi_memclr4         
+0000079d  __aeabi_memclr8         
+0000079f  __aeabi_memset          
+0000079f  __aeabi_memset4         
+0000079f  __aeabi_memset8         
+000007a5  memset                  
+00000819  __TI_auto_init          
+000008f1  _c_int00                
+00000941  copy_in                 
+0000098d  C$$EXIT                 
+00000991  abort                   
+00000999  exit                    
+000009d1  SysCtlPeripheralEnable  
+00000a05  PWMGenConfigure         
+00000a27  PWMPulseWidthSet        
+00000a45  _args_main              
+00000a5d  SysCtlPWMClockSet       
+00000a71  _register_unlock        
+00000a77  _register_lock          
+00000a7f  _nop                    
+00000a85  PWMOutputState          
+00000a97  PWMGenPeriodSet         
+00000aa7  __TI_decompress_none    
+00000ab5  PWMGenEnable            
+00000ac1  ResetISR                
+00000acd  SysCtlDelay             
+00000ad3  __TI_decompress_rle24   
+00000ad9  _system_pre_init        
+00000b58  __TI_Handler_Table_Base 
+00000b60  __TI_CINIT_Base         
+00000b60  __TI_Handler_Table_Limit
+00000b68  __TI_CINIT_Limit        
+20000000  __stack                 
+20000200  __STACK_END             
+20000200  __STACK_TOP             
+20000200  _lock                   
+20000204  _unlock                 
+20000208  __TI_cleanup_ptr        
+2000020c  __TI_dtors_ptr          
+20000210  mode                    
+20000211  flag1                   
+20000212  flag2                   
+20000213  count                   
+20000214  main_func_sp            
+ffffffff  __binit__               
+ffffffff  __c_args__              
+ffffffff  binit                   
+UNDEFED   SHT$$INIT_ARRAY$$Base   
+UNDEFED   SHT$$INIT_ARRAY$$Limit  
+
+[60 symbols]

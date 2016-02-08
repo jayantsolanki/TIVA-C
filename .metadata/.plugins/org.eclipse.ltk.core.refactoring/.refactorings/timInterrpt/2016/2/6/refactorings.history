@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;driverlib.lib&apos; to &apos;timInterrpt&apos;" description="Move &apos;driverlib.lib&apos; to &apos;timInterrpt&apos;" destination="/timInterrpt" element1="/gpioled/driverlib.lib" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1454497715361" updateReferences="true"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;driverlib.lib&apos; to &apos;gpioled&apos;" description="Move &apos;driverlib.lib&apos; to &apos;gpioled&apos;" destination="/gpioled" element1="/TIVA/driverlib.lib" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1454432219058" updateReferences="true"/>
+</session>
