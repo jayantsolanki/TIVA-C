@@ -11,6 +11,7 @@
 #include "driverlib/rom.h"
 #define PWM_FREQUENCY 55
 volatile uint8_t mode=0,flag1=0, flag2=0, ui8Adjust, count=1;
+volatile uint32_t delay=200000;
 int main(void)
 {
 	volatile uint32_t ui32Load;
@@ -75,19 +76,21 @@ int main(void)
 			if(ui8Adjust==255 || ui8Adjust==10)
 				count++;
 			if(count==1 || count==2 || count==4 || count==6){
-				ui8Adjust=10;
+				if(ui8Adjust==255 || ui8Adjust==10)
+					ui8Adjust=10;
 			}
 			if(count==3 || count==5 || count==7){
-				ui8Adjust=255;
+				if(ui8Adjust==255 || ui8Adjust==10)
+					ui8Adjust=255;
 			}
 			/*if(count==3 && ui8Adjust==255)
 				count++;*/
-			if(count==7 && ui8Adjust==10){
+			if(count==8 && ui8Adjust==10){
 				count=2;
 				//ui8Adjust=10;
 			}
 
-			SysCtlDelay(200000);
+			SysCtlDelay(delay);
 		}
 		//////////////red
 		if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00 && flag2==0){
@@ -107,20 +110,27 @@ int main(void)
 			}
 			else {
 				//increase intensity
-				ui8Adjust=ui8Adjust+10;
-				if (ui8Adjust > 254)
-				{
-					ui8Adjust = 254;
+				if(mode==0){
+					if(delay==200000)
+						delay=20000;
+					else
+						delay=delay+20000;
 				}
-				if(mode==1){
-
-					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_5, ui8Adjust * ui32Load / 1000);
-				}
-				if(mode==2){
-					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);
-				}
-				if(mode==3){
-					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, ui8Adjust * ui32Load / 1000);
+				else{
+					ui8Adjust=ui8Adjust+10;
+					if (ui8Adjust > 254)
+					{
+						ui8Adjust = 254;
+					}
+					if(mode==1){
+						PWMPulseWidthSet(PWM1_BASE, PWM_OUT_5, ui8Adjust * ui32Load / 1000);
+					}
+					if(mode==2){
+						PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);
+					}
+					if(mode==3){
+						PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, ui8Adjust * ui32Load / 1000);
+					}
 				}
 				SysCtlDelay(3000000);
 				//continue;
@@ -153,21 +163,29 @@ int main(void)
 			}
 			else{
 				//decrease intensity
-				ui8Adjust=ui8Adjust-10;
-				if (ui8Adjust < 10)
-				{
-					ui8Adjust = 10;
+				if(mode==0){
+					if(delay==20000)
+						delay=200000;
+					else
+						delay=delay-20000;
 				}
+				else {
+					ui8Adjust=ui8Adjust-10;
+					if (ui8Adjust < 10)
+					{
+						ui8Adjust = 10;
+					}
 
-				if(mode==1){
+					if(mode==1){
 
-					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_5, ui8Adjust * ui32Load / 1000);
-				}
-				if(mode==2){
-					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);
-				}
-				if(mode==3){
-					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, ui8Adjust * ui32Load / 1000);
+						PWMPulseWidthSet(PWM1_BASE, PWM_OUT_5, ui8Adjust * ui32Load / 1000);
+					}
+					if(mode==2){
+						PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);
+					}
+					if(mode==3){
+						PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, ui8Adjust * ui32Load / 1000);
+					}
 				}
 				SysCtlDelay(3000000);
 				//continue;

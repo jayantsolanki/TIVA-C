@@ -3,4 +3,4 @@
 //org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.postmortemLaunchType=org.eclipse.cdt.dsf.gdb.launch.coreCLaunch,debug,;
 //org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.cdt.launch.remoteApplicationLaunchType=org.eclipse.rse.remotecdt.dsf.debug,debug,;
 eclipse.preferences.version=1
-prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="mode"/>\n<expression enabled\="true" text\="flag1"/>\n<expression enabled\="true" text\="flag2"/>\n<expression enabled\="true" text\="ui8Adjust"/>\n<expression enabled\="true" text\="count"/>\n</watchExpressions>\n
+prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="mode"/>\n<expression enabled\="true" text\="flag1"/>\n<expression enabled\="true" text\="flag2"/>\n<expression enabled\="true" text\="ui8Adjust"/>\n<expression enabled\="true" text\="count"/>\n<expression enabled\="true" text\="delay"/>\n</watchExpressions>\n
