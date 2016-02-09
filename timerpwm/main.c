@@ -10,13 +10,12 @@
 #include "inc/hw_gpio.h"
 #include "driverlib/rom.h"
 #define PWM_FREQUENCY 55
-volatile uint8_t mode=0,flag1=0, flag2=0, count=0;
+volatile uint8_t mode=0,flag1=0, flag2=0, ui8Adjust, count=1;
 int main(void)
 {
 	volatile uint32_t ui32Load;
 	volatile uint32_t ui32PWMClock;
-	volatile uint8_t ui8Adjust;
-	ui8Adjust = 1;
+	ui8Adjust=10;
 	SysCtlClockSet(SYSCTL_SYSDIV_5|SYSCTL_USE_PLL|SYSCTL_OSC_MAIN|SYSCTL_XTAL_16MHZ);
 	SysCtlPWMClockSet(SYSCTL_PWMDIV_64);
 	SysCtlPeripheralEnable(SYSCTL_PERIPH_PWM1);
@@ -58,32 +57,47 @@ int main(void)
 	PWMGenEnable(PWM1_BASE, PWM_GEN_3);
 	while(1)
 	{
-		//mode selection
-		/*if(mode!=0 && (ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00 || ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00)){
-					//SysCtlDelay(10000000);
-					if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00 && ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00){
-						mode=3;//green
-						SysCtlDelay(40000000);
-					}
+		if(mode==0){//auto mode
+			if(count==1 || count==2 || count==4 || count==6)
+				ui8Adjust++;
+			if(count==3 || count==5 || count==7)
+				ui8Adjust--;
+			if(count==1 || count==6 || count==3){
+				PWMPulseWidthSet(PWM1_BASE, PWM_OUT_5, ui8Adjust * ui32Load / 1000);//red
+			}
+			if(count==2 || count==5){
+				PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, ui8Adjust * ui32Load / 1000);//green
+			}
+			if(count==4 || count==7){
+				PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);//blue
+			}
 
-				}*/
+			if(ui8Adjust==255 || ui8Adjust==10)
+				count++;
+			if(count==1 || count==2 || count==4 || count==6){
+				ui8Adjust=10;
+			}
+			if(count==3 || count==5 || count==7){
+				ui8Adjust=255;
+			}
+			/*if(count==3 && ui8Adjust==255)
+				count++;*/
+			if(count==7 && ui8Adjust==10){
+				count=2;
+				//ui8Adjust=10;
+			}
 
-		/*if(mode!=1 && ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00){
-			SysCtlDelay(10000000);
-			if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00)
-				if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00){
-						mode=1;//red
-						SysCtlDelay(4000000);
-
-				}
-
-		}*/
+			SysCtlDelay(200000);
+		}
 		//////////////red
 		if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00 && flag2==0){
+			//SysCtlDelay(1000000);
+
 			if(flag1==1){
 
 				if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00){
 					mode=2;//mode 2 set
+					ui8Adjust=10;
 					flag1=0;
 				}
 				else //if opposite button not pressed yet then cancel mode change
@@ -93,7 +107,21 @@ int main(void)
 			}
 			else {
 				//increase intensity
-				count++;
+				ui8Adjust=ui8Adjust+10;
+				if (ui8Adjust > 254)
+				{
+					ui8Adjust = 254;
+				}
+				if(mode==1){
+
+					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_5, ui8Adjust * ui32Load / 1000);
+				}
+				if(mode==2){
+					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);
+				}
+				if(mode==3){
+					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, ui8Adjust * ui32Load / 1000);
+				}
 				SysCtlDelay(3000000);
 				//continue;
 			}
@@ -101,16 +129,21 @@ int main(void)
 				SysCtlDelay(4000000);
 				if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00){
 					flag2=1; //button2 pressed
+					SysCtlDelay(4000000);
+					if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00)
+						flag2=1;
 					continue;
-				}
+					//SysCtlDelay(4000000);
+					}
 			}
 
 		}
-
+		//blue
 		if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00 && flag1==0){
 			if(flag2==1){
 				if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00){
 					mode=1;//mode 1 set
+					ui8Adjust=10;
 					flag2=0;
 				}
 				else
@@ -120,72 +153,44 @@ int main(void)
 			}
 			else{
 				//decrease intensity
-				count--;
+				ui8Adjust=ui8Adjust-10;
+				if (ui8Adjust < 10)
+				{
+					ui8Adjust = 10;
+				}
+
+				if(mode==1){
+
+					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_5, ui8Adjust * ui32Load / 1000);
+				}
+				if(mode==2){
+					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);
+				}
+				if(mode==3){
+					PWMPulseWidthSet(PWM1_BASE, PWM_OUT_7, ui8Adjust * ui32Load / 1000);
+				}
 				SysCtlDelay(3000000);
 				//continue;
 			}
 			if(mode!=2){
 				SysCtlDelay(4000000);
-					if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00)
+					if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00){
 						flag1=1; //button2 pressed
+						SysCtlDelay(4000000);
+						if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00)
+							flag2=1;//second button also pressed
+					continue;
+				//SysCtlDelay(4000000);
+					}
 			}
 
+		}//green hornet
+		if(flag1==1 && flag2==1){
+			mode=3;
+			ui8Adjust=10;
+			flag1=flag2=0;
+			SysCtlDelay(4000000);
 		}
-		///////////////////blue
-		/*if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00 && flag1==0){
-			if(mode!=2){
-				SysCtlDelay(4000000);
-				flag1=1;
-			}
-			else{
-				//decrease intensity
-			}
-		}
-		if(flag1==1){
-			if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00){
-				mode=2;
-				flag1=0;
-				SysCtlDelay(4000000);
-			}
-		}*/
-		///////////////////green
-		/*if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00 && flag2==0){
-			if(mode!=2){
-				SysCtlDelay(4000000);
-				flag2=1;
-			}
-			else{
 
-			}
-		}
-		if(flag2==1){
-			if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00){
-				mode=2;
-				flag2=0;
-				SysCtlDelay(4000000);
-			}
-		}*/
-
-
-		/*if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_4)==0x00)
-		{
-
-			ui8Adjust--;
-			if (ui8Adjust < 1)
-			{
-				ui8Adjust = 1;
-			}
-			ROM_PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);
-		}
-		if(ROM_GPIOPinRead(GPIO_PORTF_BASE,GPIO_PIN_0)==0x00)
-		{
-			ui8Adjust++;
-			if (ui8Adjust > 254)
-			{
-				ui8Adjust = 254;
-			}
-			ROM_PWMPulseWidthSet(PWM1_BASE, PWM_OUT_6, ui8Adjust * ui32Load / 1000);
-		}*/
-		//SysCtlDelay(100000);
 	}
 }
