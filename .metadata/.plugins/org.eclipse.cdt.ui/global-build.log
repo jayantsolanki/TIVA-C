@@ -1,22 +1,1589 @@
 
-**** Build of configuration Debug for project timerpwm ****
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
 
 /opt/ti/ccsv6/utils/bin/gmake -k all 
 Building file: ../main.c
 Invoking: ARM Compiler
-"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
 Finished building: ../main.c
  
-Building target: timerpwm.out
+Building target: lab4test2.out
 Invoking: ARM Linker
-"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --define=TARGET_IS_BLIZZARD_RB1 --display_error_number --diag_warning=225 --diag_wrap=off -z -m"timerpwm.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="timerpwm_linkInfo.xml" --rom_model -o "timerpwm.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
 <Linking>
-Finished building target: timerpwm.out
+Finished building target: lab4test2.out
  
 
 **** Build Finished ****
 
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
 **** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 86: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 112: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 86)
+"../main.c", line 131: warning #1696-D: multicharacter character literal (potential portability problem)
+"../main.c", line 131: warning #70-D: integer conversion resulted in truncation
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 96: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 122: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 96)
+"../main.c", line 141: warning #1696-D: multicharacter character literal (potential portability problem)
+"../main.c", line 141: warning #70-D: integer conversion resulted in truncation
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 96: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 122: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 96)
+"../main.c", line 141: warning #1696-D: multicharacter character literal (potential portability problem)
+"../main.c", line 141: warning #70-D: integer conversion resulted in truncation
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 72: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 131: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 157: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 72)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 72: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 134: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 160: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 72)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 72: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 134: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 160: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 72)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 72: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 135: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 161: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 72)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project Lab4 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TIVA ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project adc ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project gpioled ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../main.c
+Invoking: ARM Compiler
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --include_path="/opt/ti/TivaWare_C_Series-2.1.2.111" -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 74: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 137: warning #225-D: function "asciiInt" declared implicitly
+"../main.c", line 163: warning #161-D: declaration is incompatible with previous "asciiInt" (declared at line 74)
+Finished building: ../main.c
+ 
+Building target: lab4test2.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4test2.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4test2_linkInfo.xml" --rom_model -o "lab4test2.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4test2.out
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timInterrpt ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project timerpwm ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+gmake: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project lab4test2 ****
 
 /opt/ti/ccsv6/utils/bin/gmake -k all 
 gmake: Nothing to be done for `all'.

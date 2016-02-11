@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project uart ****
+
+/opt/ti/ccsv6/utils/bin/gmake -k all 
+Building target: uart.out
+Invoking: ARM Linker
+"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --display_error_number --diag_warning=225 --diag_wrap=off -z -m"uart.map" --heap_size=0 --stack_size=512 -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"/opt/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uart_linkInfo.xml" --rom_model -o "uart.out" "./main.obj" "./tm4c123gh6pm_startup_ccs.obj" "../driverlib.lib" "../tm4c123gh6pm.cmd"  -l"libc.a" 
+<Linking>
+
+ undefined                          first referenced
+  symbol                                in file     
+ ---------                          ----------------
+ ROM_ADCHardwareOversampleConfigure ./main.obj      
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "uart.out" not built
+
+>> Compilation failure
+gmake: *** [uart.out] Error 1
+gmake: Target `all' not remade because of errors.
+
+**** Build Finished ****
